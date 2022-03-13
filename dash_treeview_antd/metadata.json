@@ -54,7 +54,7 @@
         "required": false,
         "description": "Tree data",
         "defaultValue": {
-          "value": "{\n  title: 'Parent',\n  key: '0',\n  children: [{\n    title: 'Child',\n    key: '0-0',\n    children: [\n      { title: 'Subchild', key: '0-0-1' },\n      { title: 'Subchild', key: '0-0-2' },\n      { title: 'Subchild', key: '0-0-3' },\n    ],\n  }]\n}",
+          "value": "{\n  title: 'Parent',\n  key: '0',\n  children: [{\n    title: 'Child',\n    key: '0-0',\n    children: [\n      { title: 'Subchild', key: '0-0-1', toolTip: '0-0-1' },\n      { title: 'Subchild', key: '0-0-2' },\n      { title: 'Subchild', key: '0-0-3' },\n    ],\n  }]\n}",
           "computed": false
         }
       },

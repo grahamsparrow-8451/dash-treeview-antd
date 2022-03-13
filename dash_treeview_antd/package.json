@@ -2,7 +2,12 @@
   "name": "dash-treeview-antd",
   "version": "0.0.1",
   "description": "Tree view component based on Ant Design widget.",
-  "keywords": ["dash", "plugin", "treeview", "plotly"],
+  "keywords": [
+    "dash",
+    "plugin",
+    "treeview",
+    "plotly"
+  ],
   "main": "build/index.js",
   "scripts": {
     "start": "webpack-serve ./webpack.serve.config.js --open",

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 import { Tree } from 'antd';
+import { Tooltip } from 'antd';
 import 'antd/dist/antd.min.css'
 const TreeNode = Tree.TreeNode;
 
@@ -16,7 +17,11 @@ export default class TreeView extends Component {
     }
 
     renderTreeNode(nodeData) {
-      return <TreeNode key={nodeData.key} title={nodeData.title}>{
+      return <TreeNode key={nodeData.key} title={
+     <Tooltip placement="right" title={nodeData.toolTip}>
+          <div style={{width: "100%"}}>{nodeData.title}</div>
+     </Tooltip>
+}>{
               nodeData.children ?
                 nodeData.children.map(ch => this.renderTreeNode(ch)) : ''}
           </TreeNode>
@@ -124,7 +129,7 @@ TreeView.defaultProps = {
       title: 'Child',
       key: '0-0',
       children: [
-        { title: 'Subchild', key: '0-0-1' },
+        { title: 'Subchild', key: '0-0-1', toolTip: '0-0-1' },
         { title: 'Subchild', key: '0-0-2' },
         { title: 'Subchild', key: '0-0-3' },
       ],

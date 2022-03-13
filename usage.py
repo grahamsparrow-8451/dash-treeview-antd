@@ -23,7 +23,7 @@ app.layout = html.Div([
                 'title': 'Child',
                 'key': '0-0',
                 'children': [
-                    {'title': 'Subchild1', 'key': '0-0-1'},
+                    {'title': 'Subchild1', 'key': '0-0-1', 'toolTip': 'input-0-0-1'},
                     {'title': 'Subchild2', 'key': '0-0-2'},
                     {'title': 'Subchild3', 'key': '0-0-3'},
                 ],
